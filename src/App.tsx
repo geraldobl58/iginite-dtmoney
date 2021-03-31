@@ -4,6 +4,8 @@ import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 import { NewTransactionModal } from "./components/NewTransactionModal";
 
+import { Transactionsprovider } from "./TransactionsContext";
+
 import Modal from 'react-modal';
 
 import { GlobalStyle } from "./styles/global";
@@ -22,7 +24,7 @@ export function App() {
   }
 
   return (
-    <React.Fragment>
+    <Transactionsprovider>
       <Header onOpenNewTransationModal={handleOpenNewTransactionModal} />
 
       <Dashboard />
@@ -33,6 +35,6 @@ export function App() {
       />
       
       <GlobalStyle />
-    </React.Fragment>
+    </Transactionsprovider>
   );
 }
