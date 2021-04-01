@@ -21,7 +21,7 @@ Layout & Componentes Responsivos
 1.  **Faça o clone do repositório.**
 
     ```
-      git clone https://github.com/geraldobl58/admin-expense-and-income.git
+      git clone https://github.com/geraldobl58/ignite-dtmoney.git
     ```
 
 1.  **Instalação das dependências**
